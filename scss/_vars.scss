@@ -1,0 +1,38 @@
+// variables globales
+
+// colors
+$mainColor: darkred;
+$secondaryColor: gray;
+$terciaryColor: rebeccapurple;
+$quartaryColor: Black;
+
+// fonts
+$mainFont: 'Roboto Mono', monospace;
+
+// sizing
+$textSm: .8em;
+$textMd: 1em;
+$textLg: 2em;
+$textXl: 3em;
+
+// font weight
+$fontLight: 100;
+$fontBold: 700;
+$fontRegular: 500;
+
+h1 {
+    font-family: $mainFont;
+    font-weight: $fontBold;
+    color: $mainColor;
+}
+
+h2 {
+    font-family: $mainFont;
+    font-weight: $fontRegular;
+    color: $secondaryColor;
+}
+
+h6 {
+    font-family: $mainFont;
+    font-weight: $fontLight;
+}
