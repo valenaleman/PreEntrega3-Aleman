@@ -6,10 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass",
-    "sass:watch": "sass --watch scss/scss index 1/index1.scss css/index1.css",
-    "sass:watch": "sass -watch scss/scss index 2/index2.scss css/index2.css",
-    "sass:watch": "sass -watch scss/scss index 3/index3.scss css/index3.css",
-    "sass:watch": "sass --watch scss/scss index 4/index4.scss css/index4.css"
+    "sass:watch": "sass --watch scss/scss index 1/index1.scss css/index1.css scss/scss index 2/index2.scss css/index2.cssscss/scss index 3/index3.scss css/index3.css scss/scss index 4/index4.scss css/index4.css"
   },
   "author": "",
   "license": "ISC",
