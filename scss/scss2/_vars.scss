@@ -39,6 +39,7 @@ $display-block: block;
 $display-grid: grid;
 $display-flex: flex;
 $display-none: none;
+$display-inline-bock: inline-block;
 $flex-direction-row: row;
 $flex-flow-row: row;
 $flex-wrap-wrap: wrap;
@@ -296,11 +297,11 @@ ul {
     div.union img.derecha {
         height: 200px;
         width: 200px;
-        display: inline-block;
+        display: $display-inline-bock;
     }
 
     .frases {
-        display: inline-block;
+        display: $display-inline-bock;
         line-height: 1.6;
         max-width: 100%;
         overflow-x: hidden;
