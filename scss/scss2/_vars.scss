@@ -34,6 +34,15 @@ $fontMedium: 300;
 $fontHalfMedium: 400;
 $fontAlmostLight: 200;
 
+// positions
+$display-flex: flex;
+$display-block: block;
+$flex-direction-row: row;
+$flex-flow-row: row;
+$flex-wrap-wrap: wrap;
+$align-items-center: center;
+$justify-content-center: center;
+
 h1 {
     font-family: $mainFont;
     font-weight: $fontBold;
@@ -109,12 +118,12 @@ h6 {
 }
 
 .alineación {
-    display: flex;
-    flex-direction: row;
-    flex-flow: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+    display: $display-flex;
+    flex-direction: $flex-direction-row;
+    flex-flow: $flex-flow-row;
+    flex-wrap: $flex-wrap-wrap;
+    align-items: $align-items-center;
+    justify-content: $justify-content-center;
 }
 
     .alineación figcaption {
@@ -126,8 +135,8 @@ h6 {
 }
 
 footer {
-display: block;
-justify-content: center;
+display: $display-block;
+justify-content: $justify-content-center;
 }
 
 #header {
