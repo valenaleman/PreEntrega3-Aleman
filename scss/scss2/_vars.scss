@@ -20,8 +20,7 @@ $sevenColor: #434343;
 $eightColor: cornflowerblue;
 $nineColor: white;
 $tenColor: rgba(255, 0, 0, 0);
-
-
+$elevenColor: grey;
 
 // fonts
 $mainFont: 'Roboto Mono', monospace;
@@ -37,11 +36,32 @@ $fontAlmostLight: 200;
 // positions
 $display-flex: flex;
 $display-block: block;
+$display-grid: grid;
+$display-flex: flex;
+$display-none: none;
 $flex-direction-row: row;
 $flex-flow-row: row;
 $flex-wrap-wrap: wrap;
 $align-items-center: center;
 $justify-content-center: center;
+$align-content-center: center;
+$justify-items-center: center;
+$margin-left-auto: auto;
+$margin-right-auto: auto;
+$justify-content-left: left;
+$left: left;
+$text-align-center: center;
+
+//size
+$largePadding: 10px 0 10px 5px;
+$largeMargin: 30px 5px 5px 15px;
+$largeWidth: 700;
+$mediumWidth: 600;
+$littleMargin: 0;
+$mediumPadding: 10px;
+$box-sizing-border-box: border-box;
+$both: both;
+$smallMargin-top: 20px;
 
 h1 {
     font-family: $mainFont;
@@ -111,8 +131,8 @@ h6 {
 }
 
 .box-model {
-    margin: 30px 5px 5px 15px;
-    padding: 10px 0 10px 5px;
+    margin: $largeMargin;
+    padding: $largePadding;
     border: 10px solid $tenColor;
     text-align: justify;
 }
@@ -150,44 +170,17 @@ ul {
     list-style: none;
 }
 
-.nav li a:hover {
-    background-color: $sevenColor;
-}
-
-.nav li a {
-    background-color: $nineColor;
-    color: $sixColor;
-    width: $fontRegular;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
-}
-
-.nav > li {
-    float: left;
-}
-
-.nav li ul {
-    display: none;
-    position: absolute;
-    min-width: 140px;
-}
-
-.nav li:hover > ul {
-    display: block;
-}
-
 .grid-container {
-    display: grid;
+    display: $display-grid;
     grid-template-columns: 50px; /* 2 columnas */
     grid-template-rows: 50px; /* 2 filas */
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     /* Centrar items */
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    justify-items: $justify-items-center;
+    align-items: $align-items-center;
+    justify-content: $justify-content-center;
+    align-content: $align-content-center;
     column-gap: 10px;
     row-gap: 10px;
 }
@@ -199,86 +192,73 @@ ul {
     grid-column-gap: 10px;
     grid-row-gap: 10px;
     /* Centrar items */
-    margin-left: auto;
-    margin-right: auto;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
+    margin-left: $margin-left-auto;
+    margin-right: $margin-right-auto;
+    justify-items: $justify-items-center;
+    align-items: $align-items-center;
+    justify-content: $justify-content-center;
+    align-content: $align-content-center;
     column-gap: 10px;
     row-gap: 10px;
 }
 
-.nav li ul li:first-child a.menu-link {
-    background-color: lightcoral;
-    color: white;
-    padding: 5px;
-    display: block;
-}
-
-.nav li ul li:nth-child(2) a.frases-link {
-    background-color: lightgray;
-    padding: 5px;
-    display: block;
-}
-   
 .union {
-    display: flex;
-    justify-content: left;
+    display: $display-flex;
+    justify-content: $justify-content-left;
 }
 
 .caja-1 {
-    background-color: grey;
-    max-width: 700px;
-    margin: 0;
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 20px;
+    background-color: $elevenColor;
+    max-width: $largeWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
   }
 
   .caja-2 {
-    clear: both;
-    background-color: grey;
-    max-width: 600px;
-    margin: 0;
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 20px;
+    clear: $both;
+    background-color: $elevenColor;
+    max-width: $mediumWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
   }
 
   .caja-3 {
-    clear: both;
-    background-color: grey;
-    max-width: 700px;
-    margin: 0;
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 20px;
+    clear: $both;
+    background-color: $elevenColor;
+    max-width: $largeWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
   }
 
   .caja-4 {
-    clear: both;
-    background-color: grey;
-    max-width: 600px;
-    margin: 0;
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 20px;
+    clear: $both;
+    background-color: $elevenColor;
+    max-width: $mediumWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
   }
 
   .caja-5 {
-    clear: both;
-    background-color: grey;
-    max-width: 600px;
-    margin: 0;
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 20px;
+    clear: $both;
+    background-color: $elevenColor;
+    max-width: $mediumWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
   }
 
 /* Estilos para dispositivos móviles */
@@ -292,8 +272,8 @@ ul {
     }
 
     .imagenfrases {
-        justify-content: center;
-        text-align: center;
+        justify-content: $justify-content-center;
+        text-align: $text-align-center;
         background-position: center;
         background-attachment: fixed;
         width: 200px;
@@ -302,14 +282,14 @@ ul {
     }
 
     .titulo {
-        justify-content: center;
-        text-align: center;
+        justify-content: $justify-content-center;
+        text-align: $text-align-center;
         font-weight: 200;
     }
 
     .subtitulo {
-        justify-content: center;
-        text-align: center;
+        justify-content: $justify-content-center;
+        text-align: $text-align-center;
         font-weight: 100;
     }
 
@@ -349,7 +329,7 @@ ul {
       .contenedorfrases .frasescontainer {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: $align-items-center;
       }
       .contenedorfrases .frasescontainer h3 {
         text-align: right;
