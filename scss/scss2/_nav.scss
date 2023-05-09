@@ -1,5 +1,62 @@
+// decoration
 $mainColor: transparent !important;
+$noDecoration: none;
+
+// colors
+$oneColor: lightcoral;
+$twoColor: white;
+$threeColor: lightgray;
+
+// size
+$mediumPadding: 10px 15px;
+$smallPading: 5px;
+
+// position
+$display-block: block;
+$left: left;
+$absolute: absolute;
+$width: 140px;
 
 .navbar{
     background-color: $mainColor;
+}
+
+.nav li a {
+    background-color: $nineColor;
+    color: $sixColor;
+    width: $fontRegular;
+    text-decoration: $noDecoration;
+    padding: $mediumPadding;
+    display: $display-block;
+}
+
+.nav > li {
+    float: $left;
+}
+
+.nav li ul {
+    display: $display-none;
+    position: $absolute;
+    min-width: $width;
+}
+
+.nav li:hover > ul {
+    display: $display-block;
+}
+
+.nav li a:hover {
+    background-color: $sevenColor;
+}
+
+.nav li ul li:first-child a.menu-link {
+    background-color: $elevenColor;
+    color: $twoColor;
+    padding: $smallPading;
+    display: $display-block;
+}
+
+.nav li ul li:nth-child(2) a.frases-link {
+    background-color: $threeColor;
+    padding: $smallPading;
+    display: $display-block;
 }
