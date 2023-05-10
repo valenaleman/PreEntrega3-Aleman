@@ -32,12 +32,13 @@ $fontRegular: 500;
 $fontMedium: 300;
 $fontHalfMedium: 400;
 $fontAlmostLight: 200;
+$fontMini: 14px;
+$fontMinitwo: 15px;
 
 // positions
 $display-flex: flex;
 $display-block: block;
 $display-grid: grid;
-$display-flex: flex;
 $display-none: none;
 $display-inline-bock: inline-block;
 $flex-direction-row: row;
@@ -56,6 +57,9 @@ $miniMargin: 0 auto;
 $mini-line-height: 1.6;
 $hidden-overflow-x: hidden;
 $cover-object-fit: cover;
+$column: column;
+$wrap: wrap;
+$row: 4;
 
 //size
 $largePadding: 10px 0 10px 5px;
@@ -74,6 +78,14 @@ $both: both;
 $smallMargin-top: 20px;
 $miniMargin: 10;
 $complete-max-width: 100%;
+$mini-margin-top: 10px;
+$mini-padding-left: 25px;
+$completeWidth: 100%;
+$text-right: right;
+$margin-bottom: 0;
+$margin-right: 5px;
+$margin-bottom-container: 20px;
+
 
 h1 {
     font-family: $mainFont;
@@ -198,7 +210,7 @@ ul {
 }
 
 .grid-container2 {
-    display: grid;
+    display: $display-grid;
     grid-template-columns: 400px; /* 1 columna */
     grid-template-rows: 1px; /*1 fila */
     grid-column-gap: 10px;
@@ -320,47 +332,47 @@ ul {
         width: $largeWidthtwo;
         height: $miniHeighttwo;
         margin: $miniMargin;
-        margin-top: 10px;
-        padding-left: 25px;
-        font-size: 14px;
-        padding: 10px;
-        font-weight: 100;
+        margin-top: $mini-margin-top;
+        padding-left: $mini-padding-left;
+        font-size: $fontMini;
+        padding: $mediumPadding;
+        font-weight: $fontLight;
     }
 
     .union {
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-direction: $column;
+        flex-wrap: $wrap;
     }
 
     .union > h3 {
-        width: 100%;
+        width: $completeWidth;
       }
       .contenedorfrases {
-        width: 100%;
+        width: $completeWidth;
       }
       .contenedorfrases .frasescontainer {
-        display: flex;
-        flex-direction: column;
+        display: $display-flex;
+        flex-direction: $column;
         align-items: $align-items-center;
       }
       .contenedorfrases .frasescontainer h3 {
-        text-align: right;
-        margin-bottom: 0;
+        text-align: $text-right;
+        margin-bottom: $margin-bottom;
       }
       .contenedorfrases .frasescontainer .números {
-        margin-right: 5px;
+        margin-right: $margin-right;
       }
 
     .contenedorfrases {
-        margin-bottom: 20px;
+        margin-bottom: $margin-bottom-container;
     }
 
     .nota {
-        margin: 0;
+        margin: $littleMargin;
     }
 
     .iyt {
-        grid-row: 4;
+        grid-row: $row;
     }
 }
 
@@ -376,26 +388,26 @@ ul {
     }
 
     .union {
-        display: flex;
-        justify-content: left;
+        display: $display-flex;
+        justify-content: $justify-content-left;
     }
 
     .contenedorfrases {
-        display: flex;
-        flex-direction: column;
+        display: $display-flex;
+        flex-direction: $column;
     }
     
     .frases {
-        float: left;
-        clear: left;
-        font-size: 15px;
+        float: $left;
+        clear: $left;
+        font-size: $fontMinitwo;
     }
 
     .peliculas {
-        font-size: 15px;
+        font-size: $fontMinitwo;
     }
 
     .frases2 {
-        font-size: 15px;
+        font-size: $fontMinitwo;
     }
 }
