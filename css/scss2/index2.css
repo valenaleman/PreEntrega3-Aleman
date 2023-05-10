@@ -117,33 +117,6 @@ ul {
   list-style: none;
 }
 
-.nav li a:hover {
-  background-color: #434343;
-}
-
-.nav li a {
-  background-color: white;
-  color: black;
-  width: 500;
-  text-decoration: none;
-  padding: 10px 15px;
-  display: block;
-}
-
-.nav > li {
-  float: left;
-}
-
-.nav li ul {
-  display: none;
-  position: absolute;
-  min-width: 140px;
-}
-
-.nav li:hover > ul {
-  display: block;
-}
-
 .grid-container {
   display: grid;
   grid-template-columns: 50px; /* 2 columnas */
@@ -176,19 +149,6 @@ ul {
   row-gap: 10px;
 }
 
-.nav li ul li:first-child a.menu-link {
-  background-color: lightcoral;
-  color: white;
-  padding: 5px;
-  display: block;
-}
-
-.nav li ul li:nth-child(2) a.frases-link {
-  background-color: lightgray;
-  padding: 5px;
-  display: block;
-}
-
 .union {
   display: flex;
   justify-content: left;
@@ -196,7 +156,7 @@ ul {
 
 .caja-1 {
   background-color: grey;
-  max-width: 700px;
+  max-width: 700;
   margin: 0;
   float: left;
   padding: 10px;
@@ -207,7 +167,7 @@ ul {
 .caja-2 {
   clear: both;
   background-color: grey;
-  max-width: 600px;
+  max-width: 600;
   margin: 0;
   float: left;
   padding: 10px;
@@ -218,7 +178,7 @@ ul {
 .caja-3 {
   clear: both;
   background-color: grey;
-  max-width: 700px;
+  max-width: 700;
   margin: 0;
   float: left;
   padding: 10px;
@@ -229,7 +189,7 @@ ul {
 .caja-4 {
   clear: both;
   background-color: grey;
-  max-width: 600px;
+  max-width: 600;
   margin: 0;
   float: left;
   padding: 10px;
@@ -240,7 +200,7 @@ ul {
 .caja-5 {
   clear: both;
   background-color: grey;
-  max-width: 600px;
+  max-width: 600;
   margin: 0;
   float: left;
   padding: 10px;
@@ -263,7 +223,7 @@ ul {
     background-attachment: fixed;
     width: 200px;
     height: 100px;
-    margin: 0 auto;
+    margin: 10;
   }
   .titulo {
     justify-content: center;
@@ -286,7 +246,7 @@ ul {
     max-width: 100%;
     overflow-x: hidden;
     object-fit: cover;
-    width: 400px;
+    width: 400;
     height: 85px;
     margin: 10;
     margin-top: 10px;
@@ -358,6 +318,46 @@ ul {
 }
 .navbar {
   background-color: transparent !important;
+}
+
+.nav li a {
+  background-color: white;
+  color: black;
+  width: 500;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.nav > li {
+  float: left;
+}
+
+.nav li ul {
+  display: none;
+  position: absolute;
+  min-width: 140px;
+}
+
+.nav li:hover > ul {
+  display: block;
+}
+
+.nav li a:hover {
+  background-color: #434343;
+}
+
+.nav li ul li:first-child a.menu-link {
+  background-color: grey;
+  color: white;
+  padding: 5px;
+  display: block;
+}
+
+.nav li ul li:nth-child(2) a.frases-link {
+  background-color: lightgray;
+  padding: 5px;
+  display: block;
 }
 
 /*# sourceMappingURL=index2.css.map */
