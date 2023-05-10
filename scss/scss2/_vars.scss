@@ -1,13 +1,5 @@
-body {
-    background-image: url(https://i.pinimg.com/564x/fd/25/cc/fd25cc4130db0b4a6085deab09efac44.jpg);
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
+// url
+$body-bg: url(https://i.pinimg.com/564x/fd/25/cc/fd25cc4130db0b4a6085deab09efac44.jpg);
 
 // colors
 $mainColor: blueviolet;
@@ -60,8 +52,22 @@ $cover-object-fit: cover;
 $column: column;
 $wrap: wrap;
 $row: 4;
+$text-align-justify: justify;
+$medium-grid-template-columns: 50px;
+$medium-grid-template-rows: 50px;
+$grid-gap: 10px;
+$miniGap: 10px;
+$grid-template-columns: 400px;
+$grid-template-rows: 1px;
+$body-fit: cover;
+$body-pos: bottom;
+$body-attachment: fixed;
+$twobody-pos: center;
+$body-image: fixed;
+$threebody-poss: contain;
+$middle: middle;
 
-//size
+// size
 $largePadding: 10px 0 10px 5px;
 $largeMargin: 30px 5px 5px 15px;
 $largeWidth: 700;
@@ -85,6 +91,25 @@ $text-right: right;
 $margin-bottom: 0;
 $margin-right: 5px;
 $margin-bottom-container: 20px;
+$body-width: 100%;
+$body-height: 300px;
+$body-size: cover;
+
+// customs
+$solid: solid;
+$miniBorder: 10px;
+$body-repeat: no-repeat;
+
+body {
+    background-image: $body-bg;
+    width: $body-width;
+    height: $body-height;
+    object-fit: $body-fit;
+    object-position: $body-pos;
+    background-repeat: $body-repeat;
+    background-attachment: $body-attachment;
+    background-size: $body-size;
+}
 
 
 h1 {
@@ -151,14 +176,14 @@ h6 {
  }
 
  .centro{
-    vertical-align: middle;
+    vertical-align: $middle;
 }
 
 .box-model {
     margin: $largeMargin;
     padding: $largePadding;
-    border: 10px solid $tenColor;
-    text-align: justify;
+    border: $miniBorder $solid $tenColor;
+    text-align: $text-align-justify;
 }
 
 .alineación {
@@ -196,25 +221,25 @@ ul {
 
 .grid-container {
     display: $display-grid;
-    grid-template-columns: 50px; /* 2 columnas */
-    grid-template-rows: 50px; /* 2 filas */
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-template-columns: $medium-grid-template-columns; /* 2 columnas */
+    grid-template-rows: $medium-grid-template-rows; /* 2 filas */
+    grid-column-gap: $grid-gap;
+    grid-row-gap: $grid-gap;
     /* Centrar items */
     justify-items: $justify-items-center;
     align-items: $align-items-center;
     justify-content: $justify-content-center;
     align-content: $align-content-center;
-    column-gap: 10px;
-    row-gap: 10px;
+    column-gap: $miniGap;
+    row-gap: $miniGap;
 }
 
 .grid-container2 {
     display: $display-grid;
-    grid-template-columns: 400px; /* 1 columna */
-    grid-template-rows: 1px; /*1 fila */
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    grid-template-columns: $grid-template-columns; /* 1 columna */
+    grid-template-rows: $grid-template-rows; /*1 fila */
+    grid-column-gap: $grid-gap;
+    grid-row-gap: $grid-gap;
     /* Centrar items */
     margin-left: $margin-left-auto;
     margin-right: $margin-right-auto;
@@ -222,8 +247,8 @@ ul {
     align-items: $align-items-center;
     justify-content: $justify-content-center;
     align-content: $align-content-center;
-    column-gap: 10px;
-    row-gap: 10px;
+    column-gap: $miniGap;
+    row-gap: $miniGap;
 }
 
 .union {
@@ -289,10 +314,10 @@ ul {
 
 @media screen and (max-width: 400px) {
     body {
-        background-image: url(https://i.pinimg.com/564x/fd/25/cc/fd25cc4130db0b4a6085deab09efac44.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-image: $body-bg;
+        background-size: $body-size;
+        background-repeat: $body-repeat;
+        background-attachment: $body-attachment;
     }
 
     .imagenfrases {
@@ -380,11 +405,11 @@ ul {
 
 @media screen and (max-width: 1500px) {
     body {
-        background-image: url(https://i.pinimg.com/564x/fd/25/cc/fd25cc4130db0b4a6085deab09efac44.jpg);
-        background-position: center;
-        background-image: fixed;
-        background-repeat: no-repeat;
-        background-position: contain;
+        background-image: $body-bg;
+        background-position: $twobody-pos;
+        background-image: $body-image;
+        background-repeat: $body-repeat;
+        background-position: $threebody-poss;
     }
 
     .union {
