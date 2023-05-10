@@ -1,39 +1,62 @@
-// variables globales
+// url
+$body-bg: url(https://i.pinimg.com/564x/f8/f5/94/f8f5949eac79c86f399384b3aebe046f.jpg);
 
 // colors
 $mainColor: darkred;
 $secondaryColor: gray;
 $tertiaryColor: rebeccapurple;
 $quartaryColor: Black;
+$fiveColor: rgba(255, 0, 0, 0);
+
 
 // fonts
 $mainFont: 'Roboto Mono', monospace;
 
-// sizing
+// size
 $textSm: .8em;
 $textMd: 1em;
 $textLg: 2em;
 $textXl: 3em;
+$largePadding: 10px 0 10px 5px;
+$largeMargin: 30px 5px 5px 15px;
+$body-height: 100vh;
 
 // font weight
 $fontLight: 100;
 $fontBold: 700;
 $fontRegular: 500;
 
+// position
+$display-block: block;
+$body-pos: center;
+$twobody-pos: contain;
+$threebody-pos: bottom;
+$fourbody-pos: 20px;
+$body-image: fixed;
+$body-text-align: center;
+$text-align-justify: justify;
+$middle: middle;
+$justify-content-center: center;
+
+// custom
+$body-repeat: no-repeat;
+$solid: solid;
+$miniBorder: 10px;
+
 body {
-    background-image: url(https://i.pinimg.com/564x/f8/f5/94/f8f5949eac79c86f399384b3aebe046f.jpg);
-    background-position: center;
-    background-image: fixed;
-    background-repeat: no-repeat;
-    background-position: contain;
-    text-align: center;
+    background-image: $body-bg;
+    background-position: $body-pos;
+    background-image: $body-image;
+    background-repeat: $body-repeat;
+    background-position: $twobody-pos;
+    text-align: $body-text-align;
 }
 
 .box-model {
-    margin: 30px 5px 5px 15px;
-    padding: 10px 0 10px 5px;
-    border: 10px solid rgba(255, 0, 0, 0);
-    text-align: justify;
+    margin: $largeMargin;
+    padding: $largePadding;
+    border: $miniBorder $solid $fiveColor;
+    text-align: $text-align-justify;
 }
 
 h1 {
@@ -62,22 +85,22 @@ h6 {
 }
 
 .iyt {
-    vertical-align: middle;
+    vertical-align: $middle;
 }
 
 footer {
-    display: block;
-    justify-content: center;
+    display: $display-block;
+    justify-content: $justify-content-center;
 }
 
  /* Estilos para dispositivos móviles */
 
  @media screen and (max-width: 400px) {
     body {
-    background-image: url(https://i.pinimg.com/564x/f8/f5/94/f8f5949eac79c86f399384b3aebe046f.jpg);
-    background-size: contain;
-    background-position: center bottom 20px;
-    height: 100vh;
+    background-image: $body-bg;
+    background-size: $twobody-pos;
+    background-position: $body-pos $threebody-pos $fourbody-pos;
+    height: $body-height;
     }
  
 }
@@ -86,11 +109,11 @@ footer {
 
 @media screen and (max-width: 1500px) {
     body {
-        background-image: url(https://i.pinimg.com/564x/f8/f5/94/f8f5949eac79c86f399384b3aebe046f.jpg);
-        background-position: center bottom 20px;
-        background-image: fixed;
-        background-repeat: no-repeat;
-        background-position: contain;
-        text-align: center;
+        background-image: $body-bg;
+        background-position: $body-pos $threebody-pos $fourbody-pos;
+        background-image: $body-image;
+        background-repeat: $body-repeat;
+        background-position: $twobody-pos;
+        text-align: $body-text-align;
         }
 }
