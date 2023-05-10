@@ -52,17 +52,28 @@ $margin-right-auto: auto;
 $justify-content-left: left;
 $left: left;
 $text-align-center: center;
+$miniMargin: 0 auto;
+$mini-line-height: 1.6;
+$hidden-overflow-x: hidden;
+$cover-object-fit: cover;
 
 //size
 $largePadding: 10px 0 10px 5px;
 $largeMargin: 30px 5px 5px 15px;
 $largeWidth: 700;
+$largeWidthtwo: 400;
 $mediumWidth: 600;
+$smallWidth: 200px;
+$smallHeight: 200px;
+$miniHeight: 100px;
+$miniHeighttwo: 85px;
 $littleMargin: 0;
 $mediumPadding: 10px;
 $box-sizing-border-box: border-box;
 $both: both;
 $smallMargin-top: 20px;
+$miniMargin: 10;
+$complete-max-width: 100%;
 
 h1 {
     font-family: $mainFont;
@@ -277,38 +288,38 @@ ul {
         text-align: $text-align-center;
         background-position: center;
         background-attachment: fixed;
-        width: 200px;
-        height: 100px;
-        margin: 0 auto;
+        width: $smallWidth;
+        height: $miniHeight;
+        margin: $miniMargin;
     }
 
     .titulo {
         justify-content: $justify-content-center;
         text-align: $text-align-center;
-        font-weight: 200;
+        font-weight: $fontAlmostLight;
     }
 
     .subtitulo {
         justify-content: $justify-content-center;
         text-align: $text-align-center;
-        font-weight: 100;
+        font-weight: $fontLight;
     }
 
     div.union img.derecha {
-        height: 200px;
-        width: 200px;
+        height: $smallHeight;
+        width: $smallWidth;
         display: $display-inline-bock;
     }
 
     .frases {
         display: $display-inline-bock;
-        line-height: 1.6;
-        max-width: 100%;
-        overflow-x: hidden;
-        object-fit: cover;
-        width: 400px;
-        height: 85px;
-        margin: 10;
+        line-height: $mini-line-height;
+        max-width: $complete-max-width;
+        overflow-x: $hidden-overflow-x;
+        object-fit: $cover-object-fit;
+        width: $largeWidthtwo;
+        height: $miniHeighttwo;
+        margin: $miniMargin;
         margin-top: 10px;
         padding-left: 25px;
         font-size: 14px;
