@@ -1,50 +1,68 @@
-// color
-$sevenColor: #434343;
-$eightColor: white;
-$fiveColor: black;
-$nineColor: lightcoral;
+// dcoration
+$ceroColor: transparent !important;
+$noDecoration: none;
 
+// font width
+$fontRegular: 500px;
+
+// color
+$mainColor: #434343;
+$secondaryColor: white;
+$tertiaryColor: black;
+$fourColor: lightcoral;
+$fiveColor: lightgray;
+
+// size
+$mediumPadding: 10px 15px;
+$smallPading: 5px;
+
+// position
+$display-block: block;
+$display-none: none;
+$left: left;
+$absolute: absolute;
+$width: 140px;
 
 .navbar{
-    background-color: transparent !important;
+    background-color: $ceroColor;
 }
 
 .nav li a:hover {
-    background-color: $sevenColor;
+    background-color: $mainColor;
 }
 
 .nav li a {
-    background-color: $eightColor;
-    color: $fiveColor;
-    width: 500px;
-    text-decoration: none;
-    padding: 10px 15px;
-    display: block;
+    background-color: $secondaryColor;
+    color: $tertiaryColor;
+    width: $fontRegular;
+    text-decoration: $noDecoration;
+    padding: $mediumPadding;
+    display: $display-block;
 }
 
 .nav > li {
-    float: left;
+    float: $left;
 }
 
 .nav li ul {
-    display: none;
-    position: absolute;
-    min-width: 140px;
+    display: $display-none;
+    position: $absolute;
+    min-width: $width;
 }
 
 .nav li:hover > ul {
-    display: block;
+    display: $display-block;
 }
 
 .nav li ul li:first-child a.menu-link {
-    background-color: $nineColor;
-    color: $eightColor;
-    padding: 5px;
+    background-color: $fourColor;
+    color: $secondaryColor;
+    padding: $smallPading;
     display: block;
 }
 
 .nav li ul li:nth-child(3) a.momentos-link {
-    background-color: $tenColor;
-    padding: 5px;
-    display: block;
+    background-color: $fiveColor;
+    padding: $smallPading;
+    display: $display-block;
 }

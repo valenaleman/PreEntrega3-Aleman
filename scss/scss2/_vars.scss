@@ -8,7 +8,6 @@ $tertiaryColor: violet;
 $fourColor: coral;
 $fiveColor: rebeccapurple;
 $sixColor: black;
-$sevenColor: #434343;
 $eightColor: cornflowerblue;
 $nineColor: white;
 $tenColor: rgba(255, 0, 0, 0);
@@ -70,9 +69,9 @@ $middle: middle;
 // size
 $largePadding: 10px 0 10px 5px;
 $largeMargin: 30px 5px 5px 15px;
-$largeWidth: 700;
-$largeWidthtwo: 400;
-$mediumWidth: 600;
+$largeWidth: 700px;
+$largeWidthtwo: 400px;
+$mediumWidth: 600px;
 $smallWidth: 200px;
 $smallHeight: 200px;
 $miniHeight: 100px;
@@ -99,6 +98,7 @@ $body-size: cover;
 $solid: solid;
 $miniBorder: 10px;
 $body-repeat: no-repeat;
+$list-style: none;
 
 body {
     background-image: $body-bg;
@@ -216,7 +216,7 @@ justify-content: $justify-content-center;
 }
 
 ul {
-    list-style: none;
+    list-style: $list-style;
 }
 
 .grid-container {

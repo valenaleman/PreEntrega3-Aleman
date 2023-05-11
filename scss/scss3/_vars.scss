@@ -11,9 +11,8 @@ $terciaryColor: coral;
 $fourColor: rebeccapurple;
 $fiveColor: black;
 $sixColor: cornflowerblue;
-$tenColor: lightgray;
-$elevenColor: grey;
-$twelveColor: rgba(255, 0, 0, 0);
+$sevenColor: grey;
+$eightColor: rgba(255, 0, 0, 0);
 
 // font weight
 $fontLight: 100;
@@ -28,6 +27,7 @@ $fontMinitwo: 15px;
 // position
 $display-flex: flex;
 $display-block: block;
+$display-grid: grid;
 $text-align-justify: justify;
 $flex-direction-row: row;
 $flex-flow-row: row;
@@ -38,6 +38,21 @@ $middle: middle;
 $body-ob-fit: cover;
 $body-ob-pos: bottom;
 $body-attachment: fixed;
+$medium-grid-template-columns: 50px;
+$medium-grid-template-rows: 50px;
+$grid-gap: 10px;
+$miniGap: 10px;
+$align-items-center: center;
+$justify-content-center: center;
+$align-content-center: center;
+$justify-items-center: center;
+$grid-template-columns: 400px;
+$grid-template-rows: 1px;
+$margin-left-auto: auto;
+$margin-right-auto: auto;
+$left: left;
+$miniMargin: 0 auto;
+$column: column;
 
 // size 
 $largePadding: 10px 0 10px 5px;
@@ -45,11 +60,24 @@ $largeMargin: 30px 5px 5px 15px;
 $body-width: 100%;
 $body-height: 300px;
 $body-size: cover;
+$mediumWidthtwo: 400px;
+$largeWidth: 500px;
+$mediumWidth: 600px;
+$indMargin: auto;
+$both: both;
+$largeWidth: 700px;
+$littleMargin: 0;
+$mediumPadding: 10px;
+$box-sizing-border-box: border-box;
+$smallMargin-top: 20px;
+$body-size: cover;
+$largeHeight: 100px;
 
 // custom
 $solid: solid;
 $miniBorder: 10px;
 $body-repeat: no-repeat;
+$list-style: none;
 
 h1 {
     font-family: $mainFont;
@@ -100,7 +128,7 @@ h6 {
 .box-model {
     margin: $largeMargin;
     padding: $largePadding;
-    border: $miniBorder $solid $twelveColor;
+    border: $miniBorder $solid $eightColor;
     text-align: $text-align-justify;
 }
 
@@ -139,121 +167,121 @@ body {
 
 
 #header {
-    margin: auto;
-    width: 500px;
+    margin: $indMargin;
+    width: $largeWidth;
     font-family: $mainFont; 
-    font-weight: 100;
+    font-weight: $fontLight;
 }
 
 ul {
-    list-style: none;
+    list-style: $list-style;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: 50px; /* 2 columnas */
-    grid-template-rows: 50px; /* 2 filas */
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    display: $display-grid;
+    grid-template-columns: $medium-grid-template-columns; /* 2 columnas */
+    grid-template-rows: $medium-grid-template-rows; /* 2 filas */
+    grid-column-gap: $grid-gap;
+    grid-row-gap: $grid-gap;
     /* Centrar items */
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    column-gap: 10px;
-    row-gap: 10px;
+    justify-items: $justify-items-center;
+    align-items: $align-items-center;
+    justify-content: $justify-content-center;
+    align-content: $align-content-center;
+    column-gap: $miniGap;
+    row-gap: $miniGap;
 }
 
 .grid-container2 {
-    display: grid;
-    grid-template-columns: 400px; /* 1 columna */
-    grid-template-rows: 1px; /*1 fila */
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    display: $display-grid;
+    grid-template-columns: $grid-template-columns; /* 1 columna */
+    grid-template-rows: $grid-template-rows; /*1 fila */
+    grid-column-gap: $grid-gap;
+    grid-row-gap: $grid-gap;
     /* Centrar items */
-    margin-left: auto;
-    margin-right: auto;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    column-gap: 10px;
-    row-gap: 10px;
+    margin-left: $margin-left-auto;
+    margin-right: $margin-right-auto;
+    justify-items: $justify-items-center;
+    align-items: $align-items-center;
+    justify-content: $justify-content-center;
+    align-content: $align-content-center;
+    column-gap: $miniGap;
+    row-gap: $miniGap;
 }
 
 .caja-1 {
-    background-color: $elevenColor;
-    max-width: 700px;
-    margin: 0;
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 20px;
+    background-color: $sevenColor;
+    max-width: $largeWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $border-sizing-border-box;
+    margin-top: $smallMargin-top;
   }
 
   .caja-2 {
-    clear: both;
-    background-color: $elevenColor;
-    max-width: 600px;
-    margin: 0;
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 20px;
+    clear: $both;
+    background-color: $sevenColor;
+    max-width: $mediumWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
   }
 
   .caja-3 {
-    clear: both;
-    background-color: $elevenColor;
-    max-width: 700px;
-    margin: 0;
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 20px;
+    clear: $both;
+    background-color: $sevenColor;
+    max-width: $largeWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
   }
 
   .caja-4 {
-    clear: both;
-    background-color: $elevenColor;
-    max-width: 600px;
-    margin: 0;
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 20px;
+    clear: $both;
+    background-color: $sevenColor;
+    max-width: $mediumWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
   }
 
   .caja-5 {
-    clear: both;
-    background-color: $elevenColor;
-    max-width: 600px;
-    margin: 0;
-    float: left;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-top: 20px;
+    clear: $both;
+    background-color: $sevenColor;
+    max-width: $mediumWidth;
+    margin: $littleMargin;
+    float: $left;
+    padding: $mediumPadding;
+    box-sizing: $box-sizing-border-box;
+    margin-top: $smallMargin-top;
   }
 
 /* Estilos para dispositivos móviles */
 
 @media screen and (max-width: 400px) {
     body {
-        background-image: url(https://i.pinimg.com/564x/fd/25/cc/fd25cc4130db0b4a6085deab09efac44.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-image: $body-bg;
+        background-size: $body-size;
+        background-repeat: $body-repeat;
+        background-attachment: $body-attachment;
     }
 
     .containter {
-        display: block;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 400px;
-        height: 100px;
-        margin: 0 auto;
-        flex-direction: column;
+        display: $display-block;
+        display: $display-flex;
+        justify-content: $justify-content-center;
+        align-items: $align-items-center;
+        width: $mediumWidthtwo;
+        height: $largeHeight;
+        margin: $miniMargin;        
+        flex-direction: $column;
         align-items: flex-start;
     }
 
@@ -302,7 +330,7 @@ ul {
 
 @media screen and (max-width: 1500px) {
     body {
-        background-image: url(https://i.pinimg.com/564x/fd/25/cc/fd25cc4130db0b4a6085deab09efac44.jpg);
+        background-image: $body-bg;
         background-position: center;
         background-image: fixed;
         background-repeat: no-repeat;

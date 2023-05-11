@@ -6,6 +6,13 @@ $noDecoration: none;
 $oneColor: lightcoral;
 $twoColor: white;
 $threeColor: lightgray;
+$fourColor: #434343;
+$fiveColor: white;
+$sixColor: black;
+$sevenColor: grey;
+
+// font width
+$fontRegular: 500px;
 
 // size
 $mediumPadding: 10px 15px;
@@ -13,6 +20,7 @@ $smallPading: 5px;
 
 // position
 $display-block: block;
+$display-none: none;
 $left: left;
 $absolute: absolute;
 $width: 140px;
@@ -22,7 +30,7 @@ $width: 140px;
 }
 
 .nav li a {
-    background-color: $nineColor;
+    background-color: $fiveColor;
     color: $sixColor;
     width: $fontRegular;
     text-decoration: $noDecoration;
@@ -45,11 +53,11 @@ $width: 140px;
 }
 
 .nav li a:hover {
-    background-color: $sevenColor;
+    background-color: $fourColor;
 }
 
 .nav li ul li:first-child a.menu-link {
-    background-color: $elevenColor;
+    background-color: $sevenColor;
     color: $twoColor;
     padding: $smallPading;
     display: $display-block;
