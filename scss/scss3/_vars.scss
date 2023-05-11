@@ -33,6 +33,7 @@ $flex-direction-row: row;
 $flex-flow-row: row;
 $flex-wrap-wrap: wrap;
 $align-items-center: center;
+$align-items-flex-start: flex-start;
 $justify-content-center: center;
 $middle: middle;
 $body-ob-fit: cover;
@@ -53,6 +54,15 @@ $margin-right-auto: auto;
 $left: left;
 $miniMargin: 0 auto;
 $column: column;
+$text-align-center: center;
+$bac-pos: center; 
+$bac-attachment: fixed;
+$mini-line-height: 1.6;
+$hidden-overflow-x: hidden;
+$mini-padding-left: 25px;
+$body-pos: center;
+$body-image: fixed;
+$body-postwo: contain;
 
 // size 
 $largePadding: 10px 0 10px 5px;
@@ -72,6 +82,11 @@ $box-sizing-border-box: border-box;
 $smallMargin-top: 20px;
 $body-size: cover;
 $largeHeight: 100px;
+$miniHeight: 80px;
+$smallWidth: 200px;
+$miniHeighttwo: 55px;
+$mediumMargin: 10;
+$miniMargin-top: 10px;
 
 // custom
 $solid: solid;
@@ -282,47 +297,47 @@ ul {
         height: $largeHeight;
         margin: $miniMargin;        
         flex-direction: $column;
-        align-items: flex-start;
+        align-items: $align-items-flex-start;
     }
 
     .imagenfrases {
-        justify-content: center;
-        text-align: center;
-        background-position: center;
-        background-attachment: fixed;
-        width: 200px;
-        height: 80px;
-        margin: 0 auto;
+        justify-content: $justify-content-center;
+        text-align: $text-align-center;
+        background-position: $bac-pos;
+        background-attachment: $bac-attachment;
+        width: $smallWidth;
+        height: $miniHeight;
+        margin: $miniMargin;
     }
 
     .titulo {
-        justify-content: center;
-        text-align: center;
-        font-weight: 200;
+        justify-content: $justify-content-center;
+        text-align: $text-align-center;
+        font-weight: $fontAlmostLight;
     }
 
     .frases {
-        font-size: 14px;
-        font-weight: 100;
+        font-size: $fontMini;
+        font-weight: $fontLight;
     }
 
     .frases2 {
-        display: block;
-        line-height: 1.6;
-        overflow-x: hidden;
-        width: 400px;
-        height: 55px;
-        margin: 10;
-        margin-top: 10px;
-        padding-left: 25px;
-        padding: 10px;
-        font-size: 14px;
-        font-weight: 100;
+        display: $display-block;
+        line-height: $mini-line-height;
+        overflow-x: $hidden-overflow-x;
+        width: $mediumWidthtwo;
+        height: $miniHeighttwo;
+        margin: $mediumMargin;
+        margin-top: $miniMargin-top;
+        padding-left: $mini-padding-left;
+        padding: $mediumPadding;
+        font-size: $fontMini;
+        font-weight: $fontLight;
     }
     
     .derecha {
-        height: 100px;
-        width: 200px;
+        height: $largeHeight;
+        width: $smallWidth;
     }
 }
 
@@ -331,23 +346,23 @@ ul {
 @media screen and (max-width: 1500px) {
     body {
         background-image: $body-bg;
-        background-position: center;
-        background-image: fixed;
-        background-repeat: no-repeat;
-        background-position: contain;
+        background-position: $body-pos;
+        background-image: $body-image;
+        background-repeat: $body-repeat;
+        background-position: $body-postwo;
     }
 
     .frases {
-        font-size: 15px;
+        font-size: $fontMinitwo;
     }
 
     .frases2 {
-         display: block;
-         line-height: 1.6;
-         overflow-x: hidden;
-         margin-top: 10px;
-         padding-left: 25px;
-         padding: 10px;
-         font-size: 15px;
+         display: $display-block;
+         line-height: $mini-line-height;
+         overflow-x: $hidden-overflow-x;
+         margin-top: $miniMargin-top;
+         padding-left: $mini-padding-left;
+         padding: $mediumPadding;
+         font-size: $fontMinitwo;
     }
 }
