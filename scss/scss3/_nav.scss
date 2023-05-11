@@ -1,0 +1,50 @@
+// color
+$sevenColor: #434343;
+$eightColor: white;
+$fiveColor: black;
+$nineColor: lightcoral;
+
+
+.navbar{
+    background-color: transparent !important;
+}
+
+.nav li a:hover {
+    background-color: $sevenColor;
+}
+
+.nav li a {
+    background-color: $eightColor;
+    color: $fiveColor;
+    width: 500px;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav > li {
+    float: left;
+}
+
+.nav li ul {
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+
+.nav li:hover > ul {
+    display: block;
+}
+
+.nav li ul li:first-child a.menu-link {
+    background-color: $nineColor;
+    color: $eightColor;
+    padding: 5px;
+    display: block;
+}
+
+.nav li ul li:nth-child(3) a.momentos-link {
+    background-color: $tenColor;
+    padding: 5px;
+    display: block;
+}

@@ -1,0 +1,325 @@
+//url
+$body-bg: url(https://i.pinimg.com/564x/fd/25/cc/fd25cc4130db0b4a6085deab09efac44.jpg);
+
+// fonts
+$mainFont: 'Roboto Mono', monospace;
+
+// colors
+$mainColor: blueviolet;
+$secondaryColor: violet;
+$terciaryColor: coral;
+$fourColor: rebeccapurple;
+$fiveColor: black;
+$sixColor: cornflowerblue;
+$tenColor: lightgray;
+$elevenColor: grey;
+$twelveColor: rgba(255, 0, 0, 0);
+
+// font weight
+$fontLight: 100;
+$fontBold: 700;
+$fontRegular: 500;
+$fontMedium: 300;
+$fontHalfMedium: 400;
+$fontAlmostLight: 200;
+$fontMini: 14px;
+$fontMinitwo: 15px;
+
+// position
+$display-flex: flex;
+$display-block: block;
+$text-align-justify: justify;
+$flex-direction-row: row;
+$flex-flow-row: row;
+$flex-wrap-wrap: wrap;
+$align-items-center: center;
+$justify-content-center: center;
+$middle: middle;
+$body-ob-fit: cover;
+$body-ob-pos: bottom;
+$body-attachment: fixed;
+
+// size 
+$largePadding: 10px 0 10px 5px;
+$largeMargin: 30px 5px 5px 15px;
+$body-width: 100%;
+$body-height: 300px;
+$body-size: cover;
+
+// custom
+$solid: solid;
+$miniBorder: 10px;
+$body-repeat: no-repeat;
+
+h1 {
+    font-family: $mainFont;
+    font-weight: $fontBold;
+    color: $mainColor;
+}
+
+h5 {
+    font-family: $mainFont;
+    font-weight: $fontHalfMedium;
+}
+
+h6 {
+    font-family: $mainFont;
+    font-weight: $fontLight;
+}
+
+.frases {
+    font-family: $mainFont;
+    font-weight: $fontHalfMedium;
+}
+
+.números{
+    font-family: $mainFont;
+    font-weight: $fontHalfMedium;
+    color: $secondaryColor;
+}
+
+.frases2 {
+    font-family: $mainFont;
+    font-weight: $fontAlmostLight;
+}
+
+.números2 {
+    font-family: $mainFont;
+    font-weight: $fontAlmostLight;
+    color: $terciaryColor;
+}
+
+.redes {
+    color: $fourColor;
+}
+
+.acount {
+    color: $fiveColor;
+ }
+
+.box-model {
+    margin: $largeMargin;
+    padding: $largePadding;
+    border: $miniBorder $solid $twelveColor;
+    text-align: $text-align-justify;
+}
+
+.alineación {
+    display: $display-flex;
+    flex-direction: $flex-direction-row;
+    flex-flow: $flex-flow-row;
+    flex-wrap: $flex-wrap-wrap;
+    align-items: $align-items-center;
+    justify-content: $justify-content-center;
+}
+
+    .alineación figcaption {
+        color: $sixColor;
+    }
+
+.iyt {
+    vertical-align: $middle;
+}
+
+footer {
+display: $display-block;
+justify-content: $justify-content-center;
+}
+
+body {
+    background-image: $body-bg;
+    width: $body-width;
+    height: $body-height;
+    object-fit: $body-ob-fit;
+    object-position: $body-ob-pos;
+    background-repeat: $body-repeat;
+    background-attachment: $body-attachment;
+    background-size: $body-size;
+}
+
+
+#header {
+    margin: auto;
+    width: 500px;
+    font-family: $mainFont; 
+    font-weight: 100;
+}
+
+ul {
+    list-style: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 50px; /* 2 columnas */
+    grid-template-rows: 50px; /* 2 filas */
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    /* Centrar items */
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 400px; /* 1 columna */
+    grid-template-rows: 1px; /*1 fila */
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    /* Centrar items */
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.caja-1 {
+    background-color: $elevenColor;
+    max-width: 700px;
+    margin: 0;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+
+  .caja-2 {
+    clear: both;
+    background-color: $elevenColor;
+    max-width: 600px;
+    margin: 0;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+
+  .caja-3 {
+    clear: both;
+    background-color: $elevenColor;
+    max-width: 700px;
+    margin: 0;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+
+  .caja-4 {
+    clear: both;
+    background-color: $elevenColor;
+    max-width: 600px;
+    margin: 0;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+
+  .caja-5 {
+    clear: both;
+    background-color: $elevenColor;
+    max-width: 600px;
+    margin: 0;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+
+/* Estilos para dispositivos móviles */
+
+@media screen and (max-width: 400px) {
+    body {
+        background-image: url(https://i.pinimg.com/564x/fd/25/cc/fd25cc4130db0b4a6085deab09efac44.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .containter {
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        height: 100px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .imagenfrases {
+        justify-content: center;
+        text-align: center;
+        background-position: center;
+        background-attachment: fixed;
+        width: 200px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .titulo {
+        justify-content: center;
+        text-align: center;
+        font-weight: 200;
+    }
+
+    .frases {
+        font-size: 14px;
+        font-weight: 100;
+    }
+
+    .frases2 {
+        display: block;
+        line-height: 1.6;
+        overflow-x: hidden;
+        width: 400px;
+        height: 55px;
+        margin: 10;
+        margin-top: 10px;
+        padding-left: 25px;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: 100;
+    }
+    
+    .derecha {
+        height: 100px;
+        width: 200px;
+    }
+}
+
+/* Estilos para dispositivos desktop */
+
+@media screen and (max-width: 1500px) {
+    body {
+        background-image: url(https://i.pinimg.com/564x/fd/25/cc/fd25cc4130db0b4a6085deab09efac44.jpg);
+        background-position: center;
+        background-image: fixed;
+        background-repeat: no-repeat;
+        background-position: contain;
+    }
+
+    .frases {
+        font-size: 15px;
+    }
+
+    .frases2 {
+         display: block;
+         line-height: 1.6;
+         overflow-x: hidden;
+         margin-top: 10px;
+         padding-left: 25px;
+         padding: 10px;
+         font-size: 15px;
+    }
+}
